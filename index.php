@@ -10,7 +10,6 @@
         $class="Home";
         $method="Inicio";
     }
-    //echo $class."----".$method."<br/>";
     if(class_exists($class)&& method_exists($class, $method))
     {
         $c= new $class();

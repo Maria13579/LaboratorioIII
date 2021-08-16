@@ -1,13 +1,15 @@
 <?php
     Class Home
     {
+        public $smarty;
+        public function __construct()
+        {
+            $this->smarty = new Smarty();
+        }
         public function Inicio()
         {
-            $smarty = new Smarty();
-            
-           // $con = new Conexion();     
-            $smarty->assign('nombre','Login');
-            $smarty->display('Home.tpl');
+           $this->smarty->assign('nombre','Inicio Sesion');
+            $this->smarty->display('Home.tpl');
         }
     }
 ?>
