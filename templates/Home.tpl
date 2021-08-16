@@ -27,4 +27,5 @@
                            <img class="responsive-img" src="Recursos/f1.jpg">                     
                        </div>
     </div>
+    
 {include file="templates/Cabeceras/Footer.tpl"}

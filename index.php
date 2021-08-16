@@ -21,5 +21,6 @@
         echo "Clase o metodo no existente";
     }
    //?class=Inventario&method=ListaInventario
-
+    
 ?>
+
