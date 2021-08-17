@@ -1,34 +1,34 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-17 15:26:05
+/* Smarty version 3.1.39, created on 2021-08-18 00:33:58
   from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Administrador\CrearUsuario.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611bb8edae24e9_68911728',
+  'unifunc' => 'content_611c3956e3e2c4_50509833',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4450a92b34c2b3f41b4efc33e4ffcf094479a555' => 
     array (
       0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Administrador\\CrearUsuario.tpl',
-      1 => 1629206730,
+      1 => 1629238660,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/Cabeceras/Header.tpl' => 1,
+    'file:Navs/Encabezado.tpl' => 1,
     'file:Navs/BarraAdministrador.tpl' => 1,
     'file:Navs/Piepagina.tpl' => 1,
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_611bb8edae24e9_68911728 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611c3956e3e2c4_50509833 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
-
-<div class="card-panel teal lighten-2 "><h1 class="center-align">Crear Usuario</h1> </div>
+$_smarty_tpl->_subTemplateRender("file:Navs/Encabezado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>  
 <?php $_smarty_tpl->_subTemplateRender("file:Navs/BarraAdministrador.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>  
 <h1>Administrador</h1>

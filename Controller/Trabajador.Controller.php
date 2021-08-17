@@ -3,10 +3,12 @@
     {
         public $trab;
         public $smarty;
+        public $USUARIO;
         public function __construct()
         {
             $this->tra=new trab();
             $this->smarty = new Smarty();
+           
         }
         public function entrada()
         {
@@ -49,6 +51,7 @@
             else{
                 echo "<h2> Producto no Encontado </h2>";
             }
+         
             $this->smarty->assign('title','Trabajador');
             $this->smarty->display('Trabajador/SalidaProducto.tpl');
         }
@@ -74,6 +77,7 @@
                 array_push($i,$row);
             }
             $this->smarty->assign('producto',$in);
+         
             $this->smarty->assign('title','Ver productos');
             $this->smarty->display('Trabajador/Productos.tpl');
         }

@@ -1,6 +1,5 @@
 {include file="templates/Cabeceras/Header.tpl"}
-
-<div class="card-panel teal lighten-2 "><h1 class="center-align">Crear Usuario</h1> </div>
+{include file="Navs/Encabezado.tpl"}  
 {include file="Navs/BarraAdministrador.tpl"}  
 <h1>Administrador</h1>
 <div class="col s8">
