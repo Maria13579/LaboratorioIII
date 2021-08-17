@@ -1,36 +1,40 @@
 {include file="templates/Cabeceras/Header.tpl"}
-<div class="card-panel teal lighten-2 "><h1 class="center-align">  Inventario</h1> </div>
     {include file="Navs/BarraTrabajador.tpl"}
+    <h1>Trabajador</h1>
+<h3> Productos</h3>
     <div class ="col s8">
     <table>
         <thead>
             <tr>
                 <th>Nombre Producto</th>
+                <th>Codigo</th>
                 <th>Descripción</th>
-                <th>Precio</th>
-                <th>Cantidad</th>
                 <th>Fecha</th>
+                <th>Cantidad</th>
+                <th>Precio</th>                               
             </tr>
         </thead>
         <tbody>
-            {foreach from=$inventario item=$invent}
+            {foreach from=$producto item=$in}
                 <tr>
                     <td>
-                        {$invent['Nombre']}
+                        {$in['Nombre']}
                     </td>
                     <td>
-                     {$invent['Descripcion']}
+                     {$in['Codigo']}
                     </td>
                     <td>
-                      {$invent['Precio']}
+                     {$in['Descripcion']}
                     </td>
                     <td>
-                      {$invent['Cantidad']}
+                     {$in['FechadeIngreso']}
                     </td>
                     <td>
-                        {$invent['Fecha']}
+                      {$in['Cantidad']}
                     </td>
-
+                    <td>
+                      {$in['PrecioUnitario']}
+                    </td>
                 </tr>
             {/foreach}
         </tbody>

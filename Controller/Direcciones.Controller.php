@@ -19,28 +19,33 @@
             }
             $this->smarty->assign('NombreRol',$arr);
             $this->smarty->assign('title','Crear Usuario');
-            $this->smarty->display('CrearUsuario.tpl');
+            $this->smarty->display('Administrador/CrearUsuario.tpl');
        }
 
         public function VisIngresoProducto()
         {
             $this->smarty->assign('title','Ingresar Producto');
-            $this->smarty->display('AgregarProducto.tpl');
+            $this->smarty->display('Administrador/AgregarProducto.tpl');
         }
-        public function VisEntradaSalida()
+        public function VisSalida()
         {
-            $this->smarty->assign('tile','Entrada o Salida');
-            $this->smarty->display('');
+            $this->smarty->assign('title','Salida');
+            $this->smarty->display('Trabajador/SalidaProducto.tpl');
+        }
+        public function VisEntrada()
+        {
+            $this->smarty->assign('title','Entrada');
+            $this->smarty->display('Trabajador/EntradaProducto.tpl');
         }
         public function VisVerProductos()
         {
             $this->smarty->assign('title','Ver Productos');
-            $this->smarty->display('verInvenario.tpl');
+            $this->smarty->display('Trabajador/Productos.tpl');
         }
         public function VisBuscarProducto()
         {
             $this->smarty->assign('title','Buscar Producto');
-            $this->smarty->display('');
+            $this->smarty->display('Trabajador/BuscarProductos.tpl');
         }
 
     }
