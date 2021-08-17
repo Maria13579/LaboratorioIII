@@ -2,8 +2,8 @@
       <nav>
       <div class="nav-wrapper">
         <a class="brand-logo center">
-        {if isset($nombre)}
-          {$nombre}          
+        {if isset($encabe)}
+          {$encabe}          
         {/if}
           </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
