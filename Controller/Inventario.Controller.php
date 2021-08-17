@@ -11,7 +11,7 @@ Class Inventario
         $precio = $_POST['precio'];
         $fecha = $_POST['fecha'];
         $in=$invet->GuardarInventario($nombre,$descr,$cantidad,$precio,$fecha);
-        $smarty->assign('nombre','Inventario');
+        $smarty->assign('title','Inventario');
         $smarty->display('Inventario.tpl');
     } 
     public function VerInventarioVis()
@@ -25,13 +25,13 @@ Class Inventario
             array_push($i,$row);
         }
         $smarty->assign('inventario',$i);
-        $smarty->assign('nombre','Ver Inventario');
+        $smarty->assign('title','Ver Inventario');
         $smarty->display('verInventario.tpl');
     }
     public function VERINGRESOPRODUCTO()
     {
         $smarty = new Smarty();
-        $smarty->assign('nombre','Inventario');
+        $smarty->assign('title','Inventario');
         $smarty->display('Inventario.tpl');
     }
   

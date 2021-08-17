@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-16 18:24:21
+/* Smarty version 3.1.39, created on 2021-08-16 23:29:15
   from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611a9135225e33_58415434',
+  'unifunc' => 'content_611ad8ab7bfd25_85417815',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27a2c582e1148f2890bd489c43e9872b8e03f065' => 
     array (
       0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Home.tpl',
-      1 => 1629131058,
+      1 => 1629149349,
       2 => 'file',
     ),
   ),
@@ -22,13 +22,21 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_611a9135225e33_58415434 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611ad8ab7bfd25_85417815 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
  
              <div class="card-panel teal lighten-2 "><h1 class="center-align">Inicie Sesion</h1> </div>
-                 <br/><br/>                   
-                 <form method="post" action="?class=user&method=iniciosesion" >
+                 <br/><br/>
+                 <div class="center">
+                 <?php if ((isset($_smarty_tpl->tpl_vars['msn']->value))) {?>
+                    <h3><?php echo $_smarty_tpl->tpl_vars['msn']->value;?>
+</h1>
+                    <?php } else { ?>
+                        <h3></h3>
+                 <?php }?>    
+                 </div>               
+                 <form method="post" action="?class=User&method=BuscarUsuario" >
                       <div class = "center">
                             <div  class="row">
                                 <div class="input-field col s6">

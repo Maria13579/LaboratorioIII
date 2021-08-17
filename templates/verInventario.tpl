@@ -1,6 +1,6 @@
 {include file="templates/Cabeceras/Header.tpl"}
-<div class="card-panel teal lighten-2 "><h1 class="center-align"> Ver Inventario</h1> </div>
-    {include file="Navs/BarraOpciones.tpl"}
+<div class="card-panel teal lighten-2 "><h1 class="center-align">  Inventario</h1> </div>
+    {include file="Navs/BarraTrabajador.tpl"}
     <div class ="col s8">
     <table>
         <thead>

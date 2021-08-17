@@ -1,8 +1,15 @@
 {include file="templates/Cabeceras/Header.tpl"}
  
              <div class="card-panel teal lighten-2 "><h1 class="center-align">Inicie Sesion</h1> </div>
-                 <br/><br/>                   
-                 <form method="post" action="?class=user&method=iniciosesion" >
+                 <br/><br/>
+                 <div class="center">
+                 {if isset ($msn)}
+                    <h3>{$msn}</h1>
+                    {else}
+                        <h3></h3>
+                 {/if}    
+                 </div>               
+                 <form method="post" action="?class=User&method=BuscarUsuario" >
                       <div class = "center">
                             <div  class="row">
                                 <div class="input-field col s6">

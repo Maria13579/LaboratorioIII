@@ -1,14 +1,14 @@
 <?php
-    Class Home
+    class Funciones
     {
         public $smarty;
         public function __construct()
         {
-            $this->smarty = new Smarty();
+            $this->smarty = new Smarty;
         }
-        public function Inicio()
+        public function Salir()
         {
-           $this->smarty->assign('title','Inicio Sesion');
+            $this->smarty->assign('title','Home');
             $this->smarty->display('Home.tpl');
         }
     }

@@ -1,32 +1,43 @@
 <?php
     Class User
     {
-        public function InicioSesion()
+        public $smarty;
+        public $persona;
+        public function __construct()
         {
-            $persona = new Usuario();
-            $smarty = new Smarty();
+            $this->persona = new Usuario();
+            $this->smarty = new Smarty();
+        }
+        public function BuscarUsuario()
+        {        
             $user=$_POST['user'];
             $pass=$_POST['pass'];
-            
-            $dato=$persona->BuscarUsuario($user,$pass);
-            $vec=mysqli_fetch_assoc($dato);
-            echo "<br/>";
-
+            $dato=$this->persona->BuscarUsuario($user,$pass);
             if($dato->num_rows==1)
-            {
-                $smarty->display('Inventario.tpl');
+            { 
+                $vec=array();
+                while($fila=mysqli_fetch_assoc($dato))
+                {
+                    array_push($vec,$fila);
+                }
+                if($vec[0]['Rol_idRol']==1)
+                {
+                    $this->smarty->assign('title','Administrador');
+                    $this->smarty->display('Administrador.tpl');
+                }
+                else if($vec[0]['Rol_idRol']==2)
+                {
+                    $this->smarty->assign('title','Trabajador');
+                    $this->smarty->display('Trabajador.tpl');
+                }  
             }
             else
-            {              
-                $smarty->display('Home.tpl');           
+            {      
+                $this->smarty->assign('msn','Usuario o Contaseña incorrecto'); 
+                $this->smarty->assign('title','Home');       
+                $this->smarty->display('Home.tpl');           
             }
         
-        }
-        public function IrHome()
-        {
-            $smarty = new Smarty();
-            $smarty->assign('nombre','Inicio Sesion');
-            $smarty->display('Home.tpl');
         }
     }
 ?>

@@ -1,14 +1,16 @@
 <?php
     Class Usuario
     {
+        public $con;
+        public function __construct()
+        {
+            $this->con = new Conexion();
+        }
         public function BuscarUsuario($user, $pass)
         {
-            $con = new Conexion();//hace la conexion
-            $consulta=$con->query("SELECT * FROM `usuario` WHERE `Nombre`='$user' AND `Password`='$pass'  ");
-            $con->close();
+            $consulta=$this->con->query("SELECT * FROM `usuario` WHERE `Usuario` = '$user' AND `Pass` = '$pass'");
+            $this->con->close();
             return $consulta;
-
-            //query hacemos la peticion 
         }
     }
  
