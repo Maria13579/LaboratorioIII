@@ -18,7 +18,7 @@
             $pas=$_POST['password'];
             $ro=$_POST['rol'];   
             $this->admin->CrearUsuario($ro,$nom,$ape,$use,$pas);
-            $this->smarty->assign('encabe',$_SESSION['user']);
+            $this->smarty->assign('nombre',$_SESSION['user']);
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
@@ -32,7 +32,7 @@
             $codigo = $_POST['codigo'];
             $idus = 1;
             $this->admin->IngresoProducto($idus,$nombre,$codigo,$descr,$fecha,$cantidad,$precio);
-            $this->smarty->assign('encabe',$_SESSION['user']);
+            $this->smarty->assign('nombre',$_SESSION['user']);
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         } 
