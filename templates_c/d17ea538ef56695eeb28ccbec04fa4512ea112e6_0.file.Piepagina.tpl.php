@@ -1,4 +1,27 @@
-<footer class="page-footer">
+<?php
+/* Smarty version 3.1.39, created on 2021-08-17 15:45:57
+  from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Navs\Piepagina.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_611bbd95db8c56_49574436',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'd17ea538ef56695eeb28ccbec04fa4512ea112e6' => 
+    array (
+      0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Navs\\Piepagina.tpl',
+      1 => 1629207420,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_611bbd95db8c56_49574436 (Smarty_Internal_Template $_smarty_tpl) {
+?><footer class="page-footer">
 <div class="container">
   <div class="row">
     <div class="col l6 s12">
@@ -20,4 +43,5 @@
   © 2021 SEFIRA    sefirabanquetes@gmail.com
   </div>
 </div>
-</footer>
+</footer><?php }
+}

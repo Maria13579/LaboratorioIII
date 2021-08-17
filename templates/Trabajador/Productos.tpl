@@ -15,6 +15,7 @@
             </tr>
         </thead>
         <tbody>
+        {if isset($producto)}
             {foreach from=$producto item=$in}
                 <tr>
                     <td>
@@ -37,7 +38,11 @@
                     </td>
                 </tr>
             {/foreach}
+        {/if}
         </tbody>
     </table>
-
+    </div>
+    </div>
+    <br/> <br/> <br/>
+    {include file="Navs/Piepagina.tpl"}  
 {include file="templates/Cabeceras/Footer.tpl"}

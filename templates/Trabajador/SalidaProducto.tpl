@@ -3,7 +3,7 @@
 <h1>Trabajador</h1>
 <h3> Salida de Productos</h3>
     <div class="col s8">
-        <form method="post" action="?class=&method=">
+        <form method="post" action="?class=Trabajador&method=salida">
             
             <div class="input-field col s8">
                 <input  type="text" name="codigo" placeholder="Codigo del Producto">
@@ -23,4 +23,7 @@
             </div>
         </form>
     </div>
+    </div>
+ <br/> <br/> <br/>
+    {include file="Navs/Piepagina.tpl"}  
 {include file="templates/Cabeceras/Footer.tpl"}

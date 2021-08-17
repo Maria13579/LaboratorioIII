@@ -10,11 +10,10 @@
         }
         public function entrada()
         {
-            $cantidad=$_POST['cantidad'];
-            $codigo=$_POST['codigo'];
+            $codi=$_POST['codigo'];
             $fecha=$_POST['fecha'];
-            $con=$this->trab->BuscarProducto($codigo);
-         
+            $cantidad=$_POST['cantidad'];
+            $con=$this->tra->BuscarProductoes($codi);
             if($con->num_rows==1)
             {
                 $arr=array();
@@ -22,25 +21,37 @@
                 {
                     array_push($arr,$row);
                 }
-                $this->tra->RegisEntrada($arr[0]['idProducto'],1,$fecha,$cantidad);
+                $this->tra->RegisMovimiento($arr[0]['idProducto'],1,$fecha,$cantidad);
+                $this->tra->Entrada($codi,$cantidad);
             }
             else{
                 echo "<h2> Producto no Encontado </h2>";
             }
-            
-            $this->tra->Entrada($codigo,$cantidad);
             $this->smarty->assign('title','Entrada');
             $this->smarty->display('Trabajador/EntradaProducto.tpl');
         }
         public function salida()
         {
+            $codi=$_POST['codigo'];
+            $fecha=$_POST['fecha'];
             $cantidad=$_POST['cantidad'];
-            $codigo=$_POST['codigo'];
-            $this->tra->Entrada($codigo,$cantidad);
+            $con=$this->tra->BuscarProductoes($codi);
+            if($con->num_rows==1)
+            {
+                $arr=array();
+                while($row=mysqli_fetch_assoc($con))
+                {
+                    array_push($arr,$row);
+                }
+                $this->tra->RegisMovimiento($arr[0]['idProducto'],2,$fecha,$cantidad);
+                $this->tra->Salida($codi,$cantidad);
+            }
+            else{
+                echo "<h2> Producto no Encontado </h2>";
+            }
             $this->smarty->assign('title','Trabajador');
             $this->smarty->display('Trabajador/SalidaProducto.tpl');
         }
-  
         public function Buscar()
         {
             $codigo=$_POST['codigo'];

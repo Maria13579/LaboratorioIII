@@ -1,28 +1,29 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-16 23:29:15
+/* Smarty version 3.1.39, created on 2021-08-17 15:25:39
   from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611ad8ab7bfd25_85417815',
+  'unifunc' => 'content_611bb8d3017f12_49929646',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27a2c582e1148f2890bd489c43e9872b8e03f065' => 
     array (
       0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Home.tpl',
-      1 => 1629149349,
+      1 => 1629206698,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/Cabeceras/Header.tpl' => 1,
+    'file:Navs/Piepagina.tpl' => 1,
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_611ad8ab7bfd25_85417815 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611bb8d3017f12_49929646 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
  
@@ -58,7 +59,11 @@ $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty
                      <img class="responsive-img" src="Recursos/f1.jpg">                     
                  </div>
               </div>
-    
+              </div>
+                </div>
+                <br/> <br/> <br/>
+              <?php $_smarty_tpl->_subTemplateRender("file:Navs/Piepagina.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?>      
 <?php $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Footer.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 }
 }

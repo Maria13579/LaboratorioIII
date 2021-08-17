@@ -31,5 +31,8 @@
                      <img class="responsive-img" src="Recursos/f1.jpg">                     
                  </div>
               </div>
-    
+              </div>
+                </div>
+                <br/> <br/> <br/>
+              {include file="Navs/Piepagina.tpl"}      
 {include file="templates/Cabeceras/Footer.tpl"}

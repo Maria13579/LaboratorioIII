@@ -10,9 +10,11 @@
             </div>
             <div class="input-field col s8">
             <input class="waves-effect waves-light btn " type= "submit" value="Buscar Producto">
+            <br/> <br/><br/> <br/>
         </div>
         </form>
     </div>
+    
     <div class ="col s8">
     <table>
         <thead>
@@ -26,6 +28,7 @@
             </tr>
         </thead>
         <tbody>
+        {if isset($producto)}
             {foreach from=$producto item=$in}
                 <tr>
                     <td>
@@ -48,8 +51,11 @@
                     </td>
                 </tr>
             {/foreach}
+        {/if}
         </tbody>
     </table>
-
-
+    </div>
+    </div>
+    <br/> <br/> <br/>
+    {include file="Navs/Piepagina.tpl"}  
 {include file="templates/Cabeceras/Footer.tpl"}

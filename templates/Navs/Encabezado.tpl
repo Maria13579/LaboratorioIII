@@ -1,3 +1,4 @@
+Session_start();
 <nav>
 <div class="nav-wrapper">
   <a class="brand-logo center"></a>

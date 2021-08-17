@@ -14,38 +14,33 @@
             $this->con->close();
             return $consulta;
         }
-
+        public function BuscarProductoes($cod)
+        {
+            $consulta=$this->con->query("SELECT * FROM `producto` WHERE `Codigo`='$cod'");
+            return $consulta;
+        }
         public function BuscarProducto($cod)
         {
             $consulta=$this->con->query("SELECT * FROM `producto` WHERE `Codigo`='$cod'");
             $this->con->close();
             return $consulta;
         }
-
-        public function Entrada($codigo,$cantidad)
+        public function Entrada($codigop, $cantidadp)
         {
-            $consulta=$this->con->query("UPDATE `producto` SET `Cantidad`=(`Cantidad`+'$cantidad') WHERE `Codigo`='$codigo'");
+            $consulta=$this->con->query("UPDATE `producto` SET `Cantidad`=(`Cantidad`+'$cantidadp') WHERE `Codigo`='$codigop'");
             $this->con->close();
             return $consulta;
         }
-
-        public function Salida($codigo,$cantidad)
-        {
-            $consulta=$this->con->query("UPDATE `producto` SET `Cantidad`=(`Cantidad`-'$cantidad') WHERE `Codigo`='$codigo'");
+        public function Salida($codigop, $cantidadp)
+        {      
+            $consulta=$this->con->query("UPDATE `producto` SET `Cantidad`=(`Cantidad`-'$cantidadp') WHERE `Codigo`='$codigop'");
             $this->con->close();
             return $consulta;
         }
-
-        public function RegisEntrada ($idu,$idp,$idm,$fecha,$cant)
+        public function RegisMovimiento($idp, $idm, $fecha, $cant)
         {
-            $consulta=$this->con->query("INSERT INTO `entradasalida`(`Usuario_idUsuario`, `Producto_idProducto`, `Movimiento_idMovimiento`, `Fecha`, `Cantidad`) VALUES ('$idu','$idp','$idm','$fecha','$cant')");
-            $this->con->close();
+            $consulta=$this->con->query("INSERT INTO `entradasalida`(`Producto_idProducto`,`Movimiento_idMovimiento`,`Fecha`,`Cantidad`) VALUES ('$idp','$idm','$fecha','$cant')");
             return $consulta;
-        }
-
-        public function RegisSalida ($codio,$feha,$cantidad)
-        {
-            
         }
     }
     

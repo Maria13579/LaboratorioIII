@@ -33,4 +33,8 @@
                 </div>
             </form>
         </div>
+        </div>
+        </div>
+        <br/> <br/> <br/>
+        {include file="Navs/Piepagina.tpl"}  
 {include file="templates/Cabeceras/Footer.tpl"}
