@@ -1,33 +1,33 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-17 15:25:39
+/* Smarty version 3.1.39, created on 2021-08-18 07:06:38
   from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Home.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611bb8d3017f12_49929646',
+  'unifunc' => 'content_611c955e9a3ba0_41893088',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '27a2c582e1148f2890bd489c43e9872b8e03f065' => 
     array (
       0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Home.tpl',
-      1 => 1629206698,
+      1 => 1629263192,
       2 => 'file',
     ),
   ),
   'includes' => 
   array (
     'file:templates/Cabeceras/Header.tpl' => 1,
+    'file:Navs/Encabezado.tpl' => 1,
     'file:Navs/Piepagina.tpl' => 1,
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_611bb8d3017f12_49929646 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611c955e9a3ba0_41893088 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
-?>
- 
-             <div class="card-panel teal lighten-2 "><h1 class="center-align">Inicie Sesion</h1> </div>
+$_smarty_tpl->_subTemplateRender("file:Navs/Encabezado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
+?> 
                  <br/><br/>
                  <div class="center">
                  <?php if ((isset($_smarty_tpl->tpl_vars['msn']->value))) {?>

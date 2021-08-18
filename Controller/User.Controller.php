@@ -40,7 +40,7 @@
                   $this->smarty->assign('nombre', $_SESSION['nombre']); 
                   $this->smarty->assign('apellido', $_SESSION['apellido']);
                   $this->smarty->assign('ro', $_SESSION['rol']);
-                  $this->smarty->assign('idUs',$_SESSION['idUsua']);
+                  
                   $this->smarty->assign('title','Administrador');
                     $this->smarty->display('Administrador.tpl');
                 }
@@ -61,7 +61,7 @@
                     $this->smarty->assign('nombre', $_SESSION['nombre']); 
                     $this->smarty->assign('apellido', $_SESSION['apellido']);
                     $this->smarty->assign('ro', $_SESSION['rol']); 
-                    $this->smarty->assign('idUs',$_SESSION['idUsua']);
+                 
                     $this->smarty->assign('title','Trabajador');
                     $this->smarty->display('Trabajador.tpl');
                 }  

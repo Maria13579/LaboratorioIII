@@ -1,6 +1,5 @@
 {include file="templates/Cabeceras/Header.tpl"}
- 
-             <div class="card-panel teal lighten-2 "><h1 class="center-align">Inicie Sesion</h1> </div>
+{include file="Navs/Encabezado.tpl"} 
                  <br/><br/>
                  <div class="center">
                  {if isset ($msn)}

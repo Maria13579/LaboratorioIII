@@ -1,11 +1,11 @@
-<footer class="page-footer">
-<div class="container">
+<footer class="page-footer cyan darken-3">
+<div class="container cyan darken-3">
   <div class="row">
     <div class="col l6 s12">
       <h5 class="white-text">Maria Serrano</h5>
       <p class="grey-text text-lighten-4">Empresa SEFIRA Planificadora de Eventos</p>
     </div>
-    <div class="col l4 offset-l2 s12">
+    <div class="col l6 cyan darken-3 s12">
       <h5 class="white-text">Redes</h5>
       <ul>
         <li><i class="material-icons">tablet_mac</i><a class="grey-text text-lighten-3" href="https://sdsefira.wixsite.com/sefira?fbclid=IwAR03SxAZ7wlxREpQuJcU-DW085ocejaASIcrC3lCbwbCMZR4PAWLfyRwyZ4">Pagina Web</a></li>
