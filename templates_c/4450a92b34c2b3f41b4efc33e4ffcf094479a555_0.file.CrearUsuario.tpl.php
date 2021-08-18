@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-18 00:33:58
+/* Smarty version 3.1.39, created on 2021-08-18 05:46:58
   from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Administrador\CrearUsuario.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611c3956e3e2c4_50509833',
+  'unifunc' => 'content_611c82b2a74a21_00771571',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4450a92b34c2b3f41b4efc33e4ffcf094479a555' => 
     array (
       0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Administrador\\CrearUsuario.tpl',
-      1 => 1629238660,
+      1 => 1629258405,
       2 => 'file',
     ),
   ),
@@ -25,13 +25,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_611c3956e3e2c4_50509833 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611c82b2a74a21_00771571 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:Navs/Encabezado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>  
 <?php $_smarty_tpl->_subTemplateRender("file:Navs/BarraAdministrador.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>  
-<h1>Administrador</h1>
+<h3> Crear Usuario</h3>
 <div class="col s8">
             <form method="post" action="?class=Administrador&method=Usuario">
                 <div class="input-field col s8">

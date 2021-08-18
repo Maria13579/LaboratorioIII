@@ -11,10 +11,7 @@
             $this->smarty->assign('title','Home');
             $this->smarty->display('Home.tpl');
         }
-        public function Encabezado()
-        {
-            Smarty->assign('nombre',$_SESSION['user']);
-        }
+      
 
     }
 ?>

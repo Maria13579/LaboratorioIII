@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-18 00:31:35
+/* Smarty version 3.1.39, created on 2021-08-18 02:27:37
   from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Trabajador\SalidaProducto.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611c38c79540e2_78909342',
+  'unifunc' => 'content_611c53f97e7ba4_27594715',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1e7c35b4ac4da2669b3be00063c446e72f07a7d3' => 
     array (
       0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Trabajador\\SalidaProducto.tpl',
-      1 => 1629238627,
+      1 => 1629246435,
       2 => 'file',
     ),
   ),
@@ -25,13 +25,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:templates/Cabeceras/Footer.tpl' => 1,
   ),
 ),false)) {
-function content_611c38c79540e2_78909342 (Smarty_Internal_Template $_smarty_tpl) {
+function content_611c53f97e7ba4_27594715 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender("file:templates/Cabeceras/Header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 $_smarty_tpl->_subTemplateRender("file:Navs/Encabezado.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>  
 <?php $_smarty_tpl->_subTemplateRender("file:Navs/BarraTrabajador.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>  
-<h1>Trabajador</h1>
+
 <h3> Salida de Productos</h3>
     <div class="col s8">
         <form method="post" action="?class=Trabajador&method=salida">

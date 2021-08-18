@@ -13,14 +13,16 @@
         }
         public function Usuario()
         {
-            $_SESSION['nombre'] = $u[0]['user'];
+            
             $nom=$_POST['nombre'];
             $ape=$_POST['apellido'];
             $use=$_POST['usuario'];
             $pas=$_POST['password'];
             $ro=$_POST['rol'];   
             $this->admin->CrearUsuario($ro,$nom,$ape,$use,$pas);
-            $this->smarty->assign('nombre',$_SESSION['Nombre']);
+            $this->smarty->assign('nombre', $_SESSION['nombre']); 
+            $this->smarty->assign('apellido', $_SESSION['apellido']);
+            $this->smarty->assign('ro', $_SESSION['rol']); 
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         }
@@ -34,7 +36,9 @@
             $codigo = $_POST['codigo'];
             $idus = 1;
             $this->admin->IngresoProducto($idus,$nombre,$codigo,$descr,$fecha,$cantidad,$precio);
-            $this->smarty->assign('encabe',$_SESSION['user']);
+            $this->smarty->assign('nombre', $_SESSION['nombre']); 
+            $this->smarty->assign('apellido', $_SESSION['apellido']);
+            $this->smarty->assign('ro', $_SESSION['rol']); 
             $this->smarty->assign('title','Administrador');
             $this->smarty->display('Administrador.tpl');
         } 

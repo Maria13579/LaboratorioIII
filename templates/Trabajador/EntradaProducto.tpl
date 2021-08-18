@@ -1,7 +1,7 @@
 {include file="templates/Cabeceras/Header.tpl"}
 {include file="Navs/Encabezado.tpl"}  
 {include file="Navs/BarraTrabajador.tpl"}  
-<h1>Trabajador</h1>
+
 <h3> Entrada de Productos</h3>
     <div class="col s8">
         <form method="post" action="?class=Trabajador&method=entrada">

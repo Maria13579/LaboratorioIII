@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-17 15:14:40
+/* Smarty version 3.1.39, created on 2021-08-18 03:17:46
   from 'C:\adobeTemp\htdocs\LaboratorioIII\templates\Navs\BarraTrabajador.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_611bb64049a136_11434368',
+  'unifunc' => 'content_611c5fba1ee5d8_36070147',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '763877031191c89cb3644e60192c3f518dd1fa6f' => 
     array (
       0 => 'C:\\adobeTemp\\htdocs\\LaboratorioIII\\templates\\Navs\\BarraTrabajador.tpl',
-      1 => 1629206036,
+      1 => 1629249461,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_611bb64049a136_11434368 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="row">
+function content_611c5fba1ee5d8_36070147 (Smarty_Internal_Template $_smarty_tpl) {
+?><br/> <br/>
+<div class="row">
    <div class="col s2">
       <nav class="center-align teal lighten-2 ">OPCIONES</nav>
          <div class="collection">

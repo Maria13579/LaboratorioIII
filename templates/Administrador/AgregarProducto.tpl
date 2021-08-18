@@ -1,7 +1,7 @@
 {include file="templates/Cabeceras/Header.tpl"}
 {include file="Navs/Encabezado.tpl"}  
   {include file="Navs/BarraAdministrador.tpl"}   
-  <h1>Administrador</h1>
+  <h3> Agregar Producto</h3>
         <div class="col s8">
             <form method="post" action="?class=Administrador&method=Productos">
                 <div class="input-field col s8">

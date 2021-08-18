@@ -6,6 +6,7 @@
         public $USUARIO;
         public function __construct()
         {
+            Session_start();
             $this->tra=new trab();
             $this->smarty = new Smarty();
            
@@ -23,12 +24,15 @@
                 {
                     array_push($arr,$row);
                 }
-                $this->tra->RegisMovimiento($arr[0]['idProducto'],1,$fecha,$cantidad);
+                $this->tra->RegisMovimiento($_SESSION['idUsua'],$arr[0]['idProducto'],1,$fecha,$cantidad);
                 $this->tra->Entrada($codi,$cantidad);
             }
             else{
                 echo "<h2> Producto no Encontado </h2>";
             }
+            $this->smarty->assign('nombre', $_SESSION['nombre']); 
+            $this->smarty->assign('apellido', $_SESSION['apellido']);
+            $this->smarty->assign('ro', $_SESSION['rol']); 
             $this->smarty->assign('title','Entrada');
             $this->smarty->display('Trabajador/EntradaProducto.tpl');
         }
@@ -45,13 +49,15 @@
                 {
                     array_push($arr,$row);
                 }
-                $this->tra->RegisMovimiento($arr[0]['idProducto'],2,$fecha,$cantidad);
+                $this->tra->RegisMovimiento($_SESSION['idUsua'],$arr[0]['idProducto'],2,$fecha,$cantidad);
                 $this->tra->Salida($codi,$cantidad);
             }
             else{
                 echo "<h2> Producto no Encontado </h2>";
             }
-         
+            $this->smarty->assign('nombre', $_SESSION['nombre']); 
+            $this->smarty->assign('apellido', $_SESSION['apellido']);
+            $this->smarty->assign('ro', $_SESSION['rol']); 
             $this->smarty->assign('title','Trabajador');
             $this->smarty->display('Trabajador/SalidaProducto.tpl');
         }
@@ -65,6 +71,9 @@
                 array_push($i,$row);
             }
             $this->smarty->assign('producto',$in);
+            $this->smarty->assign('nombre', $_SESSION['nombre']); 
+            $this->smarty->assign('apellido', $_SESSION['apellido']);
+            $this->smarty->assign('ro', $_SESSION['rol']); 
             $this->smarty->assign('title','Trabajador');
             $this->smarty->display('Trabajador/BuscarProductos.tpl');
         }
@@ -77,7 +86,9 @@
                 array_push($i,$row);
             }
             $this->smarty->assign('producto',$in);
-         
+            $this->smarty->assign('nombre', $_SESSION['nombre']); 
+            $this->smarty->assign('apellido', $_SESSION['apellido']);
+            $this->smarty->assign('ro', $_SESSION['rol']); 
             $this->smarty->assign('title','Ver productos');
             $this->smarty->display('Trabajador/Productos.tpl');
         }

@@ -1,8 +1,7 @@
 {include file="templates/Cabeceras/Header.tpl"}
 {include file="Navs/Encabezado.tpl"}  
 {include file="Navs/BarraTrabajador.tpl"}  
-
-<h1>Trabajador</h1>
+<br/>
 </div>
 </div>
 <br/> <br/> <br/><br/> <br/><br/>

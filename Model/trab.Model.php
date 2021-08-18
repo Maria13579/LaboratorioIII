@@ -37,9 +37,9 @@
             $this->con->close();
             return $consulta;
         }
-        public function RegisMovimiento($idp, $idm, $fecha, $cant)
+        public function RegisMovimiento($idu, $idp, $idm, $fecha, $cant)
         {
-            $consulta=$this->con->query("INSERT INTO `entradasalida`(`Producto_idProducto`,`Movimiento_idMovimiento`,`Fecha`,`Cantidad`) VALUES ('$idp','$idm','$fecha','$cant')");
+            $consulta=$this->con->query("INSERT INTO `entradasalida`( `Usuario_idUsuario`,`Producto_idProducto`,`Movimiento_idMovimiento`,`Fecha`,`Cantidad`) VALUES ('$idu','$idp','$idm','$fecha','$cant')");
             return $consulta;
         }
     }
