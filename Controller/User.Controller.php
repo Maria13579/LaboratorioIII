@@ -6,12 +6,13 @@
         public $USUARIO;
         public function __construct()
         {
-            Session_start();
+         
             $this->persona = new Usuario();
             $this->smarty = new Smarty();
         }
         public function BuscarUsuario()
-        {        
+        {       
+           
             $user=$_POST['user'];
             $pass=$_POST['pass'];
             $dato=$this->persona->BuscarUsuario($user,$pass);   
